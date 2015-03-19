@@ -3,6 +3,7 @@ Ver:
 	http://schema.org/WebPage -> More specific Types (command or ctrl + f).
 	http://schema.org/WebPageElement ***
 	https://gist.github.com/gregrickaby/5917114 ***
+	http://googlewebmastercentral.blogspot.com.br/2013/05/using-schemaorg-markup-for-organization.html
 
 PARA TESTAR: https://developers.google.com/structured-data/testing-tool/
 
@@ -25,6 +26,12 @@ Fim BODY
 ====================
 HEADER
 ====	
+http://schema.org/Organization <- para logo || pode repetir organization se os dados internos forem diferentes
+<div class="logo" itemscope itemtype="http://schema.org/Organization">
+	<a itemprop="url" href="/" title="">
+		<img itemprop="logo" src="/front/img/logo.png" alt="Logo" />
+	</a>
+</div>
 
 <header itemscope itemtype="http://schema.org/WPHeader">
 	<!-- Podemos ter outras coisas, como logotipo, redes sociais... -->

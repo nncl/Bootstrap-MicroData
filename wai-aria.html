@@ -1,0 +1,65 @@
+Ver mais:
+	http://tableless.com.br/wai-aria-estendendo-o-significado-das-interacoes/
+	http://tableless.com.br/documentos-acessiveis-com-aria-em-html5/
+
+	http://www.webteacher.ws/2010/10/14/aria-roles-101/
+	
+	http://cssgallery.info/useful-10-minutes-of-wai-aria/
+	http://cssgallery.info/how-screen-readers-speak-a-page-with-html5-and-aria/
+
+	*** Usando;
+		http://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page
+
+	http://stevefaulkner.github.io/html-mapping-tests/
+
+====================
+ARIA
+====	
+
+Role Landmarks: conduz a navegação do usuário. A partir delas, você marca áreas importantes para que o user encontre blocos de infos importantes.
+
+	role="banner" <- Imagem principal ou título de destaque - h1. Pode aplicar em logos de empresas, banners de publicidade e etc.
+	
+	role="complementary" <- sabe a info principal da página? Então, coloca numa sessão cuja agrega mais infos a ela, ou seja, ao conteúdo principal.
+
+	role="content info" <- dados que indicam infos do site. Notas de rodapé, infos de copyright, links para termos de uso, etc.
+
+Role Widget: para tabs.
+
+Role Document Structure: indica que o elemento faz parte da estrutura do layout. Ex:
+	<ul role="menubar">
+	  <li role="menuitem">Ítem</li>
+	  <li role="menuitem">Ítem 1</li>
+	  <li role="menuitem">Ítem 2</li>
+	</ul>	
+
+	ou
+
+	<div class="post" role="article">
+	   <p>Texto</p>
+	</div>	
+
+	ou 
+
+	<article role="article">
+	   <p>Texto</p>
+	</article>	
+
+
+Estados e propriedades:
+	aria-haspopup="true" <- informa que o li tem um submenu.
+	aria-describeby="idclasse" <- indica qual elemento descreve aquela ação
+	aria-checked/unchecked="true/false" <- indica se o checkbox está ou não checado.
+
+
+
+Nunca faça isso:
+<span role="button">Botão</span>
+Prefira fazer assim:
+
+<button role="button">Botão</button>
+Sempre a semântica natural do HTML é a mais indicada e sempre prevalece.
+
+====
+Fim ARIA
+=======================
