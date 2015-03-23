@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Questão de H1 em páginas com HTML5</title>
+	</head>
+	<body>
+		<h1>Como fica a questão do H1 - um por página - com o HTML5?</h1>
+		<section>			
+			<span>Infos retiradas do artigo <a href="http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824" target="_blank">The Truth About Multiple H1 Tags in the HTML5 Era</a></span>
+
+			<p>
+				<pre>
+					<ul>
+						<li>< article > : deve ser usado quando um pedaço do conteúdo pode ser totalmente retirado da página que ainda fará sentido por si só.</li>
+						<li>< section > : deve ser usando quando um conteúdo está agrupado juntos de acordo com um tema, mas faz sentido no contexto do conteúdo que rodeia.</li>
+						<li>< nav >     : links para navegação</li>
+						<li>< aside >   : "everything else" > todo o resto</li>
+						<li><br/>Para indicar a principal área da página, usar a tag < main >.</li>
+					</ul>
+
+					<h2>Exemplo:</h2>
+
+					<code>					
+
+							< !DOCTYPE html>
+							< html >
+							   < head >
+							      < title >HTML5 markup example< / title >
+							   < / head >
+							   < body >
+							      < div >
+							         <strong>< h1 >Whackamoon Legumes!< / h1></strong>
+							      </ div >
+							      < article >
+							         <strong>< h1 >The proper use of peanuts< / h1 ></strong>
+							         < h2 >How to eat peanuts < / h2>
+							         < p >Peanuts can be eaten with salt.< / p >
+							         < p >This is an acceptable use of peanuts.< /p>
+							         < h3 >Superior peanut eating methods< /h3>
+							         < p >Peanuts are infinitely better when combined with chocolate.< /p>
+							         < p >We recommend this approach for best results< /p>
+							         < h2>Incorrect application of peanuts< /h2>
+							         < p>Peanuts should not be used to fill parking meters.< /p>
+							         < p>They will not be effective in this capacity.< /p>
+							      < /article>
+							      < article >
+							         <strong>< h1>Boiling beans< /h1></strong>
+							         < h2>Is boiling beans really worth it?< /h2 >
+							         < p>Let's be honest, it takes ages.< /p >
+							         < p>We advise just buying canned beans instead.< /p >
+							      < / article >
+							   < / body >
+							< / html >		
+
+					</code>
+				</pre>
+			</p>
+		</section>
+	</body>
+</html>
