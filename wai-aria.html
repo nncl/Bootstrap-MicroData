@@ -51,6 +51,14 @@ Role Document Structure: indica que o elemento faz parte da estrutura do layout.
 
 Estados e propriedades:
 	aria-haspopup="true" <- informa que o li tem um submenu.
+	<ul>
+		<li aria-haspopup="true">
+			<a href="Menu"></a>
+			<ul>
+				<li></li>
+			</ul>
+		</li>
+	</ul>
 	aria-describeby="idclasse" <- indica qual elemento descreve aquela ação
 	aria-checked/unchecked="true/false" <- indica se um checkbox está ou não checado.
 
