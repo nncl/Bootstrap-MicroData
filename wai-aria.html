@@ -15,17 +15,19 @@ Ver mais:
 
 	http://stevefaulkner.github.io/html-mapping-tests/
 
+	http://www.paciellogroup.com/blog/category/wai-aria/
+
 ====================
 ARIA
 ====	
 
 Role Landmarks: conduz a navegação do usuário. A partir delas, você marca áreas importantes para que o usuário encontre blocos de informações importantes.
 
-	role="banner" <- Imagem principal ou título de destaque - h1. Pode aplicar em logos de empresas, banners de publicidade e etc.
+	<span role="banner"></span> <- Imagem principal ou título de destaque - h1. Pode aplicar em logos de empresas, banners de publicidade e etc.
 	
-	role="complementary" <- sabe a info principal da página? Então, coloca numa sessão cuja agrega mais infos a ela, ou seja, ao conteúdo principal.
+	<span role="complementary"></span> <- sabe a info principal da página? Então, coloca numa sessão cuja agrega mais infos a ela, ou seja, ao conteúdo principal.
 
-	role="content info" <- dados que indicam infos do site. Notas de rodapé, infos de copyright, links para termos de uso, etc.
+	<span role="contentinfo"></span> <- dados que indicam infos do site. Notas de rodapé, infos de copyright, links para termos de uso, etc.
 
 Role Widget: para tabs.
 
@@ -50,7 +52,7 @@ Role Document Structure: indica que o elemento faz parte da estrutura do layout.
 
 
 Estados e propriedades:
-	aria-haspopup="true" <- informa que o li tem um submenu.
+	<li aria-haspopup="true"></li> <- informa que o li tem um submenu.
 	<ul>
 		<li aria-haspopup="true">
 			<a href="Menu"></a>
